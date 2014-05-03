@@ -1,0 +1,6 @@
+/cookbooks
+/tmp
+/cookbooks/
+/tmp/librarian/
+nodes/*
+!nodes/host.sample.json

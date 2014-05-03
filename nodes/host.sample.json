@@ -1,0 +1,16 @@
+{
+  "run_list":["role[app]"],
+  "authorization": {
+    "sudo": {
+      "users": ["deployer"]
+    }
+  },
+  "active_applications": {
+    "<app>_production": {
+      "rails_env": "production",
+      "packages": ["nodejs"],
+      "domain_names": ["<domain name>"],
+      "ruby_version": "2.1.1"
+    }
+  }
+}
